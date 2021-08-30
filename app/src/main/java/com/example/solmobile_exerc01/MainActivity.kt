@@ -41,7 +41,7 @@ class MainActivity : AppCompatActivity() {
                 classView.text= "Melhor parar de levantar garfo e começar lenvantar peso na academia"
             }
             if(resultadoIMC >= 30 && resultadoIMC < 39.9){
-                classView.text= "Começando a ficar uma rolha de poço"
+                classView.text= "Começando a ficar uma rolha de poço ;-;"
             }
             if(resultadoIMC > 40){
                 classView.text= "Conheço 3 gordos, e vc já é 2 deles"
