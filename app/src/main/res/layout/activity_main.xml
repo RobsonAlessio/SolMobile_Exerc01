@@ -24,7 +24,7 @@
             android:layout_marginTop="10dp"
             android:layout_marginBottom="30dp"
             android:gravity="center"
-            android:text="Calculadora de IMC"
+            android:text="Calculadora de IMC    (Índice de Massa Corporal)"
             android:textColor="#000"
             android:textSize="30sp"
             android:textStyle="bold"
@@ -35,7 +35,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Insira seu peso em KG:"
-            android:inputType="number"
+            android:inputType="numberDecimal"
             android:textAlignment="center"
             android:textSize="18dp"
             />
@@ -43,8 +43,8 @@
             android:id="@+id/inpAltura"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Insira sua altura em centímetros:"
-            android:inputType="number"
+            android:hint="Insira sua altura em metros:"
+            android:inputType="numberDecimal"
             android:textAlignment="center"
             android:textSize="18dp"
             />
@@ -53,9 +53,11 @@
             android:id="@+id/btnCalc"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:background="@color/black"
             android:text="Calcular"
+            android:textColor="@android:color/black"
             android:textSize="20sp"
-            />
+            app:rippleColor="#000000" />
         <TextView
             android:id="@+id/calcResult"
             android:layout_width="match_parent"

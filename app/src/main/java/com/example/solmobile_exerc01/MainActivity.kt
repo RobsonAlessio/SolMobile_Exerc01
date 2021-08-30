@@ -24,7 +24,7 @@ class MainActivity : AppCompatActivity() {
 
         if(pesoString != "" && alturaString != ""){
             val pesoNumero = pesoString.toFloat()
-            val alturaNumero = alturaString.toFloat()/100
+            val alturaNumero = alturaString.toFloat()
 
             val resultadoIMC = (pesoNumero/(alturaNumero * alturaNumero))
 
