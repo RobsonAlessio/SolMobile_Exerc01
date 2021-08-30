@@ -17,17 +17,17 @@
         android:layout_width="match_parent"
         android:padding="20dp">
 
-
         <TextView
-            android:id="@+id/tvTitle"
+            android:id="@+id/titulo"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="30dp"
+            android:layout_marginTop="10dp"
             android:layout_marginBottom="30dp"
             android:gravity="center"
-            android:text="Calculadora de IMC!"
+            android:text="Calculadora de IMC"
             android:textColor="#000"
-            android:textSize="24sp"
+            android:textSize="30sp"
+            android:textStyle="bold"
             />
 
         <EditText
@@ -37,16 +37,16 @@
             android:hint="Insira seu peso em KG:"
             android:inputType="number"
             android:textAlignment="center"
-            android:textSize="21sp"
+            android:textSize="18dp"
             />
         <EditText
             android:id="@+id/inpAltura"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Insira sua altura em metros:"
+            android:hint="Insira sua altura em centímetros:"
             android:inputType="number"
             android:textAlignment="center"
-            android:textSize="21sp"
+            android:textSize="18dp"
             />
 
         <Button
@@ -60,7 +60,17 @@
             android:id="@+id/calcResult"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Resultado"
+            android:layout_marginTop="20dp"
+            android:text=""
+            android:gravity="center"
+            android:textSize="20sp"
+            />
+        <TextView
+            android:id="@+id/classResult"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text=""
             android:gravity="center"
             android:textSize="20sp"
             />

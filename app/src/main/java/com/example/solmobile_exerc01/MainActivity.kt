@@ -17,6 +17,7 @@ class MainActivity : AppCompatActivity() {
         val peso = findViewById<EditText>(R.id.inpPeso)
         val altura = findViewById<EditText>(R.id.inpAltura)
         val resultadoView = findViewById<TextView>(R.id.calcResult)
+        val classView = findViewById<TextView>(R.id.classResult)
 
         val pesoString = peso.text.toString().trim()
         val alturaString = altura.text.toString().trim()
@@ -28,22 +29,22 @@ class MainActivity : AppCompatActivity() {
             val resultadoIMC = (pesoNumero/(alturaNumero * alturaNumero))
 
             val resultadoIMCText = resultadoIMC.toString()
-            resultadoView.text= resultadoIMCText
+            resultadoView.text = "IMC: " + resultadoIMCText
 
             if(resultadoIMC < 18.5){
-                resultadoView.text= "Magreza"
+                classView.text= "Se não tiver moeda no bolso, voa"
             }
             if(resultadoIMC >= 18.5 && resultadoIMC < 24.9){
-                resultadoView.text= "Normal"
+                classView.text= "Normal, tudo certo meu bom :) "
             }
             if(resultadoIMC >= 25 && resultadoIMC < 29.9){
-                resultadoView.text= "Sobrepeso"
+                classView.text= "Melhor parar de levantar garfo e começar lenvantar peso na academia"
             }
             if(resultadoIMC >= 30 && resultadoIMC < 39.9){
-                resultadoView.text= "Obesidade"
+                classView.text= "Começando a ficar uma rolha de poço"
             }
             if(resultadoIMC > 40){
-                resultadoView.text= "Obesidade Grave"
+                classView.text= "Conheço 3 gordos, e vc já é 2 deles"
             }
         }
     }
