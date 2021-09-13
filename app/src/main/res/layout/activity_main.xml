@@ -22,12 +22,21 @@
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-            android:layout_marginBottom="30dp"
             android:gravity="center"
-            android:text="Calculadora de IMC    (Índice de Massa Corporal)"
+            android:text="Calculadora de IMC"
             android:textColor="#000"
             android:textSize="30sp"
             android:textStyle="bold"
+            />
+        <TextView
+            android:id="@+id/subtitulo"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:gravity="center"
+            android:text="(Índice de Massa Corporal)"
+            android:textColor="#000"
+            android:textSize="24sp"
             />
 
         <EditText
